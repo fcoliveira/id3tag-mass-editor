@@ -1,0 +1,7 @@
+
+*
+!*.py
+!doc.txt
+!*.md
+!.gitignore
+!/eyeD3alterado
