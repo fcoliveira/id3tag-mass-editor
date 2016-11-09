@@ -27,7 +27,7 @@ for root, dirs, files in os.walk(".", topdown = False):
 				mp3_file = eyeD3.Tag() 
 				mp3_file.link(path) # links file located in 'path'
 				
-				print("Tag version: %d.%d" %(mp3_file.getMajorVer(), mp3_file.getMinorVer()))
+				print("Tag version: %d.%d" %(mp3_file.getMajorVer(), mp3_file.getMinorVer())) #new methods added to file tag.py, line 1013
 				if(mp3_file.getMajorVer() != 2 or (mp3_file.getMajorVer() == 2 and mp3_file.getMinorVer() != 4)):
 					mp3_file.setVersion(eyeD3.ID3_V2_4)
 					print("Tag updated to v2.4!")
